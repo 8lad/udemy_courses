@@ -22,6 +22,33 @@
 // console.log(incr++);
 // console.log(decr-- % 7);
 // console.log(2 === '2');
-let isChecked = true,
-    isClose = false;
-console.log(isChecked || isClose);
+// let isChecked = true,
+//     isClose = false;
+// console.log(isChecked || isClose);
+// if (2 * 4 == 3) {
+//     console.log('correct');
+// } else {
+//     console.log('incorrect');
+// };
+let num = 50;
+// if (num < 49) {
+//     console.log('incorrect');
+// } else if (num > 100) {
+//     console.log('lot');
+// } else {
+//     console.log('correct');
+// }
+// (num == 50) ? console.log('correct'): console.log('incorrect');
+switch (num) {
+    case num < 49:
+        console.log('incorrect');
+        break;
+    case num > 100:
+        console.log('lot');
+        break;
+    case 50:
+        console.log('correct');
+        break;
+    default:
+        console.log('something');
+}
