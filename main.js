@@ -30,7 +30,7 @@
 // } else {
 //     console.log('incorrect');
 // };
-let num = 50;
+// let num = 150;
 // if (num < 49) {
 //     console.log('incorrect');
 // } else if (num > 100) {
@@ -39,16 +39,46 @@ let num = 50;
 //     console.log('correct');
 // }
 // (num == 50) ? console.log('correct'): console.log('incorrect');
-switch (num) {
-    case num < 49:
-        console.log('incorrect');
-        break;
-    case num > 100:
-        console.log('lot');
-        break;
-    case 50:
-        console.log('correct');
-        break;
-    default:
-        console.log('something');
+// switch (num) {
+//     case num < 49:
+//         console.log('incorrect');
+//         break;
+//     case num > 100:
+//         console.log('lot');
+//         break;
+//     case 50:
+//         console.log('correct');
+//         break;
+//     default:
+//         console.log('something');
+// }
+// let count = 5;
+// switch (count) {
+//     case count > 58:
+//         console.log('lot');
+//         break;
+//     case count < 20:
+//         console.log('less');
+//         break;
+//     case 25:
+//         console.log('correct');
+//         break;
+//     default:
+//         console.log('strange number');
+// }
+let num = 40;
+while (num <= 55) {
+    console.log(num);
+    num++;
+};
+do {
+    console.log(num);
+    num++;
+} while (num <= 55);
+
+for (let i = 1; i < 8; i++) {
+    console.log(i);
+    if (i == 3) {
+        continue;
+    }
 }
