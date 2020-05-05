@@ -81,4 +81,37 @@ for (let i = 1; i < 8; i++) {
     if (i == 3) {
         continue;
     }
-}
+};
+
+function showFirstMessage(text) {
+    alert(text);
+};
+showFirstMessage('Hello Kitty');
+
+function calc(a, b) {
+    return (a + b);
+};
+alert(calc(4, 6));
+
+function returnVar() {
+    let num = 50;
+    return num;
+};
+let anotherNum = returnVar();
+alert(anotherNum);
+let anotherCalc = function(a, b) {
+    return (a * b);
+};
+alert(anotherCalc(5, 6));
+let testNumbers = (a, b) => a / b;
+alert(testNumbers(342, 34));
+
+let str = 'Montenegro';
+alert(str.length);
+alert(str.toUpperCase());
+alert(str.toLowerCase());
+
+let twelve = '12.2px';
+alert(Math.round(twelve));
+alert(parseInt(twelve));
+alert(parseFloat(twelve));
