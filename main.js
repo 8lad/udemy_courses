@@ -115,3 +115,60 @@ let twelve = '12.2px';
 alert(Math.round(twelve));
 alert(parseInt(twelve));
 alert(parseFloat(twelve));
+
+function first() {
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
+
+
+
+function second() {
+    console.log(2);
+}
+first();
+second();
+
+function learnJS(lang, callback) {
+    console.log("I'm study JavaScript" + lang);
+    callback();
+}
+
+function done() {
+    console.log("I've dine third lesson");
+};
+learnJS("JS", done);
+
+let count = function(a, b) {
+    let c = a + b;
+    return c;
+};
+console.log(count(4, 6));
+let options = {
+    width: 1024,
+    height: 1024,
+    name: "test"
+};
+console.log(options.name);
+options.bool = false;
+options.colors = {
+    border: 'black',
+    background: 'red'
+};
+delete options.bool;
+console.log(options);
+
+for (let key in options) {
+    console.log('options ' + key + ' has a value ' + options[key]);
+}
+console.log(Object.keys(options).length);
+
+let arr = [1, 2, 3, 4, 5, 6];
+// arr.forEach(function(item, i, massive) {
+//     console.log('index ' + i + ' inside: ' + item + ' container ' + massive);
+// });
+// console.log(arr.length);
+for (key in arr) {
+
+}
