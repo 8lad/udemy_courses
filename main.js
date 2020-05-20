@@ -169,6 +169,42 @@ let arr = [1, 2, 3, 4, 5, 6];
 //     console.log('index ' + i + ' inside: ' + item + ' container ' + massive);
 // });
 // console.log(arr.length);
-for (key in arr) {
-
+for (let key in arr) {
+    console.log(key);
 }
+
+let ans = prompt("", "");
+let newar = [];
+newar = ans.split(',');
+console.log(newar);
+
+
+let contain = ['ddkjf', 'lkj', 'lkjl'];
+let method = contain.join(', ');
+console.log(method, contain);
+
+let contai = [133, 15, 6, 112];
+let metho = contai.sort(compairNum);
+
+function compairNum(a, b) {
+    return a - b;
+}
+console.log(metho, contai);
+console.log(metho);
+
+
+let dif = [333, 5234, 534];
+// let shhi = dif.join();
+console.log(dif, dif.join('_'));
+
+
+let soldier = {
+    health: 400,
+    armor: 200
+};
+let john = {
+    health: 100
+};
+john.__proto__ = soldier;
+console.log(john);
+console.log(john.armor);
